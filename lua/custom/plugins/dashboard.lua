@@ -25,6 +25,7 @@ return {
       [[                                                                       ]],
       [[                                                                       ]],
     }
+
     dashboard.section.buttons.val = {
       dashboard.button('e', '  New file', '<cmd>ene <CR>'),
       dashboard.button('SPC s f', '󰈞  Find file'),
@@ -34,6 +35,9 @@ return {
       -- dashboard.button('SPC f m', '  Jump to bookmarks'),
       -- dashboard.button('SPC s l', '  Open last session'),
     }
+
+    dashboard.config.opts.noautocmd = true
+
     alpha.setup(dashboard.opts)
   end,
 }
